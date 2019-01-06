@@ -12,7 +12,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
         diceDOM.src = 'dice-' + dice + '.png';
-
+        
         if (previousDice !== 6 && dice !==1) {
                 scoreRound += dice;
                 document.querySelector('#current-' + activePlayer).textContent = scoreRound;
